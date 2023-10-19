@@ -1,0 +1,62 @@
+.slick-list {
+  overflow-x: clip;
+  overflow-y: unset;
+}
+
+.slick-next {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid grey;
+  margin-right: 23px;
+}
+.slick-next::before {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  top: 7px;
+  width: 12px;
+  color: grey;
+  transform: rotate(-45deg);
+}
+
+.slick-prev {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid grey;
+  margin-left: 13px;
+  z-index: 1;
+}
+
+.slick-prev::before {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 8px;
+  position: absolute;
+  top: 7px;
+  width: 12px;
+  color: grey;
+  transform: rotate(135deg);
+}
+.slick-list::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 90px;
+  height: 160px;
+  background: linear-gradient(90deg, transparent, #f1f5f9);
+  right: 0;
+  top: 0;
+}
